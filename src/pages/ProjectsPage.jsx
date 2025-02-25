@@ -4,34 +4,24 @@ import { ExternalLink } from "lucide-react";
 export function ProjectsPage() {
   const projects = [
     {
-      title: "Next.js App Router",
+      title: "Nagaland Conservatory School of Music CMS",
       description:
-        "A complete rewrite of Next.js routing system with improved developer experience and performance.",
-      link: "https://nextjs.org/docs/app",
-      image:
-        "https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&q=80&w=800",
-      year: "2023",
-      tags: ["Next.js", "React", "TypeScript"],
-    },
-    {
-      title: "Stripe Dashboard",
-      description:
-        "A complete redesign of Stripe's main dashboard interface with improved performance and accessibility.",
-      link: "https://stripe.com",
-      image:
-        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800",
-      year: "2022",
-      tags: ["React", "TypeScript", "GraphQL"],
-    },
-    {
-      title: "Developer Experience Tools",
-      description:
-        "Suite of developer tools focused on improving the development workflow and debugging experience.",
+        "A content management system for Nagaland Conservatory School of Music, built using MySQL and the MERN stack, hosted on Hostinger.",
       link: "#",
       image:
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
-      year: "2021",
-      tags: ["Node.js", "TypeScript", "CLI"],
+        "https://images.unsplash.com/photo-1581092333236-07126c41f309?auto=format&fit=crop&q=80&w=800",
+      year: "2024",
+      tags: ["MERN", "MySQL", "Hostinger"],
+    },
+    {
+      title: "SuperBazaar Smart Ship System",
+      description:
+        "A smart courier shipping system for SuperBazaar, developed with the MERN stack and MySQL, hosted on Hostinger.",
+      link: "#",
+      image:
+        "https://images.unsplash.com/photo-1590935217237-08f0efcfb4f3?auto=format&fit=crop&q=80&w=800",
+      year: "2024",
+      tags: ["MERN", "MySQL", "Hostinger"],
     },
   ];
 

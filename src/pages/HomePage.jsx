@@ -6,28 +6,33 @@ export function HomePage() {
       <header className="mb-12">
         <div className="w-24 h-24 mb-6 overflow-hidden rounded-lg border border-white/10">
           <img
-            src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200"
+            src="/dp.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-3">Tim Olsen</h1>
+        <h1 className="text-3xl font-bold mb-3">Jayantha Debnath</h1>
         <p className="text-base text-gray-400">
-          Software Engineer at Vercel working on Next.js
+          Software Engineer at{" "}
+          <span className="text-blue-600 mr-1"> Nagaed</span>
+          working on Next.js
         </p>
       </header>
 
       <main>
         <section className="mb-12">
           <p className="text-base text-gray-300 leading-relaxed mb-4">
-            I'm a software engineer based in San Francisco. I'm currently
-            working at Vercel on Next.js. Previously, I worked at Stripe on the
-            Stripe Dashboard.
+            I'm a software engineer based in Kohima, Nagaland. I'm currently
+            working at <span className="text-blue-600 mr-1"> Nagaed</span> on
+            MERN Stack. Previously, I worked at{" "}
+            <span className="text-orange-400 mr-1">Symbiosis.</span>
           </p>
           <p className="text-base text-gray-300 leading-relaxed">
-            I'm passionate about building tools that help developers build
-            better software. I'm particularly interested in developer
-            experience, performance, and accessibility.
+            I'm a web developer who loves sleek, modern designs and bringing
+            ideas to life. I specialize in the MERN stack, building fast and
+            scalable applications. I'm passionate about creating seamless user
+            experiences and intuitive interfaces, always striving for
+            performance and efficiency.
           </p>
         </section>
 
