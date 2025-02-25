@@ -8,8 +8,7 @@ export function ProjectsPage() {
       description:
         "A content management system for Nagaland Conservatory School of Music, built using MySQL and the MERN stack, hosted on Hostinger.",
       link: "#",
-      image:
-        "https://images.unsplash.com/photo-1581092333236-07126c41f309?auto=format&fit=crop&q=80&w=800",
+      image: "/school.jpeg",
       year: "2024",
       tags: ["MERN", "MySQL", "Hostinger"],
     },
@@ -18,8 +17,7 @@ export function ProjectsPage() {
       description:
         "A smart courier shipping system for SuperBazaar, developed with the MERN stack and MySQL, hosted on Hostinger.",
       link: "#",
-      image:
-        "https://images.unsplash.com/photo-1590935217237-08f0efcfb4f3?auto=format&fit=crop&q=80&w=800",
+      image: "/courier.jpeg",
       year: "2024",
       tags: ["MERN", "MySQL", "Hostinger"],
     },
