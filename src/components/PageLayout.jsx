@@ -8,57 +8,44 @@ export default function PageLayout({ children }) {
   const currentPath = location.pathname;
 
   return (
-    <motion.div
-      initial={{ filter: "blur(10px)", opacity: 0 }}
-      animate={{ filter: "blur(0px)", opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="min-h-screen bg-[#0A0A0A] text-white p-6 md:p-12 lg:p-16 pb-24 relative"
-    >
-      <div className="max-w-2xl mx-auto">
-        {children}
+    <div className="h-screen flex flex-col bg-[#0A0A0A] text-white">
+      {/* Content Wrapper (Takes Full Space & Scrolls if Needed) */}
+      <div className="flex-grow overflow-y-auto p-6 mb-22 md:mb-20">
+        <div className="max-w-2xl mx-auto mb-3">{children}</div>
+      </div>
 
-        {/* Bottom Navigation */}
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-lg rounded-2xl p-4 flex items-center gap-8 border border-white/10 z-50">
-          <Link
-            to="/"
-            className={`${
-              currentPath === "/" ? "text-white" : "text-gray-400"
-            } hover:text-white transition-colors`}
-          >
-            <Home size={20} />
-          </Link>
-          <Link
-            to="/about"
-            className={`${
-              currentPath === "/about" ? "text-white" : "text-gray-400"
-            } hover:text-white transition-colors`}
-          >
-            <User size={20} />
-          </Link>
-          <Link
-            to="/projects"
-            className={`${
-              currentPath === "/projects" ? "text-white" : "text-gray-400"
-            } hover:text-white transition-colors`}
-          >
-            <Briefcase size={20} />
-          </Link>
-          <Link
-            to="/blog"
-            className={`${
-              currentPath === "/blog" ? "text-white" : "text-gray-400"
-            } hover:text-white transition-colors`}
-          >
-            <FileText size={20} />
-          </Link>
+      {/* Bottom Dock - Improved Visibility */}
+      <div className="fixed inset-x-0 bottom-0 z-50 flex justify-center items-end pb-4">
+        {/* Optional background gradient for better contrast */}
+        <div className="fixed bottom-0 inset-x-0 h-24 bg-gradient-to-t from-black to-transparent"></div>
+
+        <div className="relative flex items-center gap-6 px-5 py-3 mb-2 bg-black/80 backdrop-blur-xl border border-white/20 rounded-2xl shadow-lg">
+          <NavItem to="/" icon={Home} currentPath={currentPath} />
+          <NavItem to="/about" icon={User} currentPath={currentPath} />
+          <NavItem to="/projects" icon={Briefcase} currentPath={currentPath} />
+          <NavItem to="/blog" icon={FileText} currentPath={currentPath} />
           <a
             href="mailto:example@email.com"
             className="text-gray-400 hover:text-white transition-colors"
           >
-            <Mail size={20} />
+            <Mail size={24} />
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
+  );
+}
+
+// Navigation Item Component
+function NavItem({ to, icon: Icon, currentPath }) {
+  return (
+    <Link
+      to={to}
+      className={`flex items-center justify-center w-12 h-12 rounded-lg transition-colors ${
+        currentPath === to ? "text-white bg-white/10" : "text-gray-400"
+      } hover:text-white hover:bg-white/5`}
+    >
+      <Icon size={24} />
+    </Link>
   );
 }

@@ -16,7 +16,9 @@ export function AboutPage() {
             I'm a software developer passionate about sleek designs and building
             scalable applications. I specialize in the MERN stack and React
             Native, crafting intuitive user experiences and performant web
-            solutions. Currently, I'm working at NagaEd as a Software Developer.
+            solutions. Currently, I'm working at{" "}
+            <span className="text-blue-600 mr-1"> Nagaed</span> as a Software
+            Developer.
           </p>
         </section>
 
@@ -24,9 +26,11 @@ export function AboutPage() {
           <h2 className="text-lg font-semibold mb-4">Background</h2>
           <p className="text-base text-gray-300 leading-relaxed mb-4">
             With over 4 years of experience in web development, I've worked
-            across frontend and backend technologies. Before joining NagaEd, I
-            was at SymBios Creations, where I contributed as a Frontend
-            Developer and UI/UX Designer, focusing on React.js and React Native.
+            across frontend and backend technologies. Before joining{" "}
+            <span className="text-blue-600 "> Nagaed</span>, I was at{" "}
+            <span className="text-orange-400 mr-1">Symbiosis.</span>
+            Creations, where I contributed as a Frontend Developer and UI/UX
+            Designer, focusing on React.js and React Native.
           </p>
           <p className="text-base text-gray-300 leading-relaxed">
             I started my journey as an Assistant Web Developer at Assam Power

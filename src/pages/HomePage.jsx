@@ -22,7 +22,8 @@ export function HomePage() {
       <main>
         <section className="mb-12">
           <p className="text-base text-gray-300 leading-relaxed mb-4">
-            I'm a software engineer based in Kohima, Nagaland. I'm currently
+            I'm a software engineer based in{" "}
+            <span className="text-white">Kohima, Nagaland. </span> I'm currently
             working at <span className="text-blue-600 mr-1"> Nagaed</span> on
             MERN Stack. Previously, I worked at{" "}
             <span className="text-orange-400 mr-1">Symbiosis.</span>
