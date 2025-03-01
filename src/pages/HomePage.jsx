@@ -61,9 +61,9 @@ export function HomePage() {
           <p className="text-base text-gray-300 leading-relaxed mb-4">
             I'm a software engineer based in{" "}
             <span className="text-white">Kohima, Nagaland.</span> I'm currently
-            working at <span className="text-blue-600 mr-1">Nagaed</span> on
+            working at <span className="text-blue-600 mx-1">Nagaed</span> on
             MERN Stack. Previously, I worked at
-            <span className="text-orange-400 mr-1">Symbiosis.</span>
+            <span className="text-orange-400 mx-1">Symbiosis.</span>
           </p>
           <p className="text-base text-gray-300 leading-relaxed">
             I'm a web developer who loves sleek, modern designs and bringing
